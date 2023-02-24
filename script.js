@@ -12,9 +12,9 @@ const loadData = (data) =>{
    for(let datas of rakib2){
     const div = document.createElement("div");
     div.innerHTML= `
-    <div class="card card-side bg-base-100 shadow-xl">
-    <figure><img class="w-[90%] h-[80%] rounded" src="${datas.strMealThumb}" alt="Movie"/></figure>
-    <div class="card-body">
+    <div class=" rounded-lg py-6 gap-3  px-2 md:flex shadow-xl">
+    <figure><img class="md:w-[90%] w-full md:m-auto rounded" src="${datas.strMealThumb}" alt="Movie"/></figure>
+    <div class="space-y-3">
       <h2 class="card-title text-2xl">${datas.strMeal}</h2>
       <p class="text-xl">There are many variations of passages of available, but the majority have suffered</p>
       <div class="card-actions">
@@ -68,9 +68,9 @@ const showAll = document.getElementById("showAll").addEventListener("click",()=>
            for(let datas of rakib2){
             const div = document.createElement("div");
             div.innerHTML= `
-            <div class="card card-side bg-base-100 shadow-xl">
-            <figure><img class="w-[90%] h-[80%] rounded" src="${datas.strMealThumb}" alt="Movie"/></figure>
-            <div class="card-body">
+            <div class=" rounded-lg py-6 gap-3  px-2 md:flex shadow-xl">
+            <figure><img class="md:w-[90%] w-full md:m-auto rounded" src="${datas.strMealThumb}" alt="Movie"/></figure>
+            <div class="space-y-3">
               <h2 class="card-title text-2xl">${datas.strMeal}</h2>
               <p class="text-xl">There are many variations of passages of available, but the majority have suffered</p>
               <div class="card-actions">
@@ -125,9 +125,9 @@ const showAll = document.getElementById("showAll").addEventListener("click",()=>
            for(let datas of rakib2){
             const div = document.createElement("div");
             div.innerHTML= `
-            <div class="card card-side bg-base-100 shadow-xl">
-            <figure><img class="w-[90%] h-[80%] rounded" src="${datas.strMealThumb}" alt="Movie"/></figure>
-            <div class="card-body">
+            <div class=" rounded-lg py-6 gap-3  px-2 md:flex shadow-xl">
+            <figure><img class="md:w-[90%] w-full md:m-auto rounded" src="${datas.strMealThumb}" alt="Movie"/></figure>
+            <div class="space-y-3">
               <h2 class="card-title text-2xl">${datas.strMeal}</h2>
               <p class="text-xl">There are many variations of passages of available, but the majority have suffered</p>
               <div class="card-actions">
