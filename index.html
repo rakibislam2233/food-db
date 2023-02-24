@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty HUT</title>
+    <!-- tailwind and daisyui cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a61de1ffaa.js" crossorigin="anonymous"></script>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body>
+    <!-- header part start -->
+    <header>
+      <nav class="p-5 bg-slate-50 shadow-lg">
+        <div class=" flex justify-between w-full max-w-6xl mx-auto">
+            <h1 class="text-2xl font-semibold">Tasty HUT</h1>
+            <button class="bg-amber-400 py-2 px-4 rounded  font-bold">Sing Up</button>
+        </div>
+      </nav>
+      <!-- hero area start  -->
+      <div style="background-color: rgba(0, 0, 0, 0.63);"  class="bg-[url(banner_1.png)]  bg-blend-saturation flex w-full h-[87vh] justify-center items-center">
+        <div class="md:w-[50%] text-center space-y-4">
+          <h1  class="text-5xl font-semibold text-white">Taste Our Delicious <br> Best Foods</h1>
+          <p class="text-white text-xl">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+          <input  class="w-[75%] focus:outline-0  rounded py-3 px-6" type="text" name="" id="input" placeholder="Search any food"><a href="#card" id="btn" class="md:absolute cursor-pointer  md:right-[30%] rounded py-3 px-5 bg-amber-400 font-semibold">Search</a>
+        </div>
+      </div>
+    </header>
+  <main>
+  <section class="w-full max-w-6xl mx-auto py-[100px]">
+        <h1 id="card" class="text-5xl text-center py-10">Your Favourite Food</h1>
+        <div id="card-container" class="grid md:grid-cols-2 gap-5">
+        </div>
+              <!-- modal -->
+<!-- Put this part before -->
+  <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+  <div class="modal modal-bottom sm:modal-middle">
+   <div id="modal-box" class="modal-box space-y-2">
+     <div class="flex justify-between items-center">
+       <h3 id="name" class="font-bold text-3xl"></h3>
+     <i class="fa-solid fa-xmark text-xl text-gray-500"></i>
+     </div>
+     <hr>
+     <img class=" w-full rounded h-[30%]  m-auto mb-2" id="image" src="" alt="">
+     <h3  class="font-bold text-lg">Category: <span id="category" class="text-xl font-normal"></span></h3>
+     <h3 class="font-bold text-lg">Area: <span class="text-xl font-normal" id="Area"></span></h3>
+     <p class="py-4 font-bold text-lg">Instructions: <span id="Instructions" class="text-lg font-normal"></span></p>
+     <h3 class="font-bold text-lg">Youtube: <a class="text-[18px] font-normal text-blue-800" id="Youtube" href=""></a> </h3>
+     <div class="modal-action">
+       <label for="my-modal-6" class="btn border-none bg-rose-500">Close</label>
+     </div>`
+   </div>
+ </div>
+ <div class="flex justify-center py-10">
+  <button id="showAll" class="text-center bg-amber-400 py-2 px-4 rounded  font-bold">Show All</button>
+</div>
+</section>
+</main>
+<footer class="w-full max-w-6xl mx-auto ">
+    <div class="grid md:grid-cols-4 gap-5 p-3">
+      <div class="space-y-4 text-lg font-semibold">
+        <h1 class="text-xl font-bold">Section</h1>
+        <h1><a href="">Home</a></h1>
+        <h2><a href="">Features</a></h2>
+        <h2><a href="">Pricing</a></h2>
+        <h2><a href="">FAQs</a></h2>
+        <h2><a href="">About</a></h2>
+      </div>
+      <div class="space-y-4 text-lg font-semibold">
+        <h1 class="text-xl font-bold">Section</h1>
+        <h1><a href="">UIUX Design</a></h1>
+        <h2><a href="">Product Design</a></h2>
+        <h2><a href="">Back End Developer</a></h2>
+        <h2><a href="">Front End Developer</a></h2>
+      </div>
+      <div class="space-y-4 text-lg font-semibold">
+        <h1 class="text-xl font-bold">Resource</h1>
+        <h1><a href="">FAQ</a></h1>
+        <h2><a href="">Support</a></h2>
+        <h2><a href="">Privacy Policy</a></h2>
+        <h2><a href="">Terms of Service</a></h2>
+      </div>
+      <div class="space-y-3">
+        <h1 class="text-xl font-bold">Subscribe to our newsletter</h1>
+        <h2>There are many variations of passages of available, but the majority have suffered</h2>
+        <input class="py-2 px-4 border-2 rounded" type="email" name="email" id="" placeholder="Enter Your Email"><button class="py-2 rounded  px-3 bg-amber-500">Submit</button>
+      </div>
+    </div>
+
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
